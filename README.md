@@ -1,20 +1,9 @@
-## Getting Started
+<h1>Z+- Interpreter Project</h1>
+<p>This project focuses on developing an interpreter for the Z+- programming language, aiming to familiarize with the intricacies of interpreter design and the challenges of programming language development. The interpreter, which can be implemented in either Java or C++, is designed to execute Z+- programs, highlighting variable management, loop execution, and runtime error detection.</p>
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
-# CSE465_Project1
-# CSE465_Project1
+<h2>Project Objectives:</h2>
+<ul>
+  <li>Develop a foundational understanding of how interpreters function.</li>
+  <li>Explore the complexities involved in creating a new programming language.</li>
+  <li>Implement core features of the Z+- programming language, supporting integer and string variables, assignment operations, and basic control structures.</li>
+</ul>
