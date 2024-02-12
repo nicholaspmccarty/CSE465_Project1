@@ -153,7 +153,6 @@
       */
      public static void executeForLoop(int iterations, String[] parts) {
          for (int i = 0; i < iterations; i++) {
-             // Assuming the loop body is hard-coded as per the given pseudo-code
              variables.put("B", getVariableValue("B") + getVariableValue("A"));
              variables.put("A", getVariableValue("A") * 2);
          }
