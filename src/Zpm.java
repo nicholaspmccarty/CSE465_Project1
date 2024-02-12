@@ -1,7 +1,5 @@
 /**
- * DISCLAIMER: This code is provided "as is" for educational purposes only. It is not intended for use in
- * production environments. OpenAI and its contributors do not assume any responsibility for errors or omissions,
- * or for damages resulting from the use of the information contained herein.
+ * DISCLAIMER: ChatGPT was used extensively for this project. 
  *
  * Author: Nicholas McCarty
  * This class implements a simple script interpreter that processes commands from a file. It supports basic
