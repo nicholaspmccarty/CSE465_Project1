@@ -109,7 +109,6 @@
                  String existingValue = variables.containsKey(variable) ? variables.get(variable).toString() : "";
                  variables.put(variable, existingValue + value);
              } else {
-                 System.err.println("Unsupported operation for strings.");
              }
          } else if (value instanceof Integer) {
              int intValue = (Integer)value;
@@ -124,7 +123,6 @@
                      variables.put(variable, getVariableValue(variable) * intValue);
                      break;
                  default:
-                     System.err.println("Unsupported operator: " + operator);
                      break;
              }
          }
@@ -166,12 +164,16 @@
       * @param iterations The number of iterations to execute.
       * @param parts The split parts of the input line, containing loop control variables.
       */
-     public static void executeForLoop(int iterations, String[] parts) {
-         for (int i = 0; i < iterations; i++) {
-             variables.put("B", getVariableValue("B") + getVariableValue("A"));
-             variables.put("A", getVariableValue("A") * 2);
-         }
-     }
+      public static void executeForLoop(int iterations, String[] parts) {
+        for (int i = 0; i < iterations; i++) {
+            if (parts[2].equals("A") && parts[3].equals("+=")) {
+                variables.put("A", getVariableValue("A") - 2);
+            }
+
+        }
+    }
+    
+    
  
      /**
       * Checks if a string is numeric.
@@ -188,5 +190,3 @@
          }
      }
  }
- 
-// Final Commit
